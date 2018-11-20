@@ -3,7 +3,6 @@ const mongooes = require('mongoose')
 const bodyPerser = require('body-parser')
 const passport = require('passport')
 const path = require('path')
-const client = require('../client/build')
 
 //Routes
 const users = require('./routes/Api/user')
@@ -41,11 +40,11 @@ app.use('/api/profile', profile)
 app.use('/api/posts', posts)
 
 //server Static assets if in production 
-if (process.env.NODE_ENv === 'production') {
+if (process.env.NODE_ENV === 'production') {
   //set static folder
-  app.use(express.static(client))
+  app.use(express.static(path.resolve(__dirname, '../client', 'bundle')))
   app.get('*', (req, res) => {
-    res.sendfile(path.resolve(__dirname, client, 'index.html'))
+    res.sendfile(path.resolve(__dirname, '../client', 'index.html'))
   })
 }
 
