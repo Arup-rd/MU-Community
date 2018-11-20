@@ -1,31 +1,32 @@
 {
-  "name": "Mu Community",
+  "name": "MuCommunity",
   "version": "1.0.0",
-  "description": "Social network for Mu university",
+  "description": "A social network site for Metropolitan university",
   "main": "server.js",
+  "author": "Arup rd",
+  "license": "MIT",
   "scripts": {
     "client-install": "npm install --prefix client",
-    "start": "node server.js",
+    "start": "node /server/server.js",
     "server": "nodemon server/server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
-  "author": "Arup",
-  "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "body-parser": "^1.18.2",
-    "concurrently": "^3.5.1",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
     "express": "^4.16.3",
     "gravatar": "^1.6.0",
-    "jsonwebtoken": "^8.2.0",
-    "mongoose": "^5.0.12",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.2.12",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
-    "validator": "^9.4.1"
+    "validator": "^10.7.0"
   },
   "devDependencies": {
-    "nodemon": "^1.17.3"
-  }
+    "nodemon": "^1.18.4"
+  },
+  "proxy": "http://localhost:5000"
 }
