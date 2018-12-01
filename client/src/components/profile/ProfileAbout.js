@@ -25,8 +25,8 @@ class ProfileAbout extends Component {
               {isEmpty(profile.bio) ? (
                 <span>{firstName} does not have a bio</span>
               ) : (
-                <span>{profile.bio}</span>
-              )}
+                  <span>{profile.bio}</span>
+                )}
             </p>
             <hr />
             <h3 className="text-center text-info">Skill Set</h3>
