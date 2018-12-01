@@ -48,9 +48,9 @@ class Profile extends Component {
 //           {profile.githubusername ? (
 //             <ProfileGithub username={profile.githubusername} />
 //           ) : null}
-//         </div>
-//       );
-//     }
+        </div>
+      );
+    }
 
     return (
       <div className="profile">
