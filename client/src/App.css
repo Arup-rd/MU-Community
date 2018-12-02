@@ -85,7 +85,7 @@ img {
 }
 
 .bttn {
-  color: white;
+  color: white ;
   background: steelblue;
   border-width: 3px solid;
   padding: 12px 26px 12px 26px;
@@ -96,12 +96,13 @@ img {
 }
 
 .bttn:hover {
- color: #f7b809;
-    border-color: #f7b809;
+    color: steelblue;
     border-width: 4px solid;
     background: transparent;
 }
 
 .ttx {
-  color: steelblue
+  color: steelblue;
+  font-size: 50px;
+  margin-bottom: 40px;
 }

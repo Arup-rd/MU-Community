@@ -23,10 +23,10 @@ class Landing extends Component {
                   Create Your Profile to Join in MU Family
                 </p>
                 <hr />
-                <Link to="/register" className="btn btn-lg btn-info mr-2">
+                <Link to="/register" className="btn btn-lg btn-info mr-2 bttn">
                   Sign Up
                 </Link>
-                <Link to="/login" className="btn btn-lg btn-light">
+                <Link to="/login" className="btn btn-lg btn-light bttn">
                   Login
                 </Link>
               </div>
